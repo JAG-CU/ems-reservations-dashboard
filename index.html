@@ -318,6 +318,20 @@
     border-bottom:1px solid var(--line);
     white-space:nowrap;
   }
+  table.rsg-main-table{
+    min-width:0;
+    table-layout:fixed;
+  }
+  table.rsg-main-table th,
+  table.rsg-main-table td{
+    white-space:normal;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+  }
+  table.rsg-main-table th:nth-child(1), table.rsg-main-table td:nth-child(1){width:13%;}
+  table.rsg-main-table th:nth-child(2), table.rsg-main-table td:nth-child(2){width:38%;}
+  table.rsg-main-table th:nth-child(3), table.rsg-main-table td:nth-child(3){width:33%;}
+  table.rsg-main-table th:nth-child(4), table.rsg-main-table td:nth-child(4){width:16%;}
   th{
     position:sticky;top:0;
     background:var(--paper);
@@ -497,7 +511,7 @@
   <div class="table-section">
     <h3>RSG booking history</h3>
     <div class="table-wrap">
-      <table>
+      <table class="rsg-main-table">
         <thead>
           <tr>
             <th data-rsgkey="academicYear">Academic year</th>
